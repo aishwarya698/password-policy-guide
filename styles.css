@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+}
+
+#strength-bar {
+  height: 5px;
+  background: #ddd;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+.rules {
+  list-style: none;
+  padding: 0;
+}
+
+.rules li {
+  margin-bottom: 8px;
+  color: #888;
+}
+
+.rules li.valid {
+  color: green;
+  font-weight: bold;
+}

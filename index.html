@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Policy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Create Your Password</h2>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+
+    <label for="password">Password</label>
+    <div class="password-wrapper">
+      <input type="password" id="password" placeholder="Enter your password" />
+      <span id="togglePassword">👁️</span>
+    </div>
+
+    <div id="strength-bar"></div>
+
+    <ul class="rules">
+      <li id="length">✔ Minimum 8 characters</li>
+      <li id="uppercase">✔ At least 1 uppercase letter</li>
+      <li id="lowercase">✔ At least 1 lowercase letter</li>
+      <li id="number">✔ At least 1 number</li>
+      <li id="special">✔ At least 1 special character</li>
+      <li id="history">✔ Not one of your last 5 passwords</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
